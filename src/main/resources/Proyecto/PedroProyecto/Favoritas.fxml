@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -10,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FB7F74;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FB7F74;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto.PedroProyecto.FavoritasController">
    <children>
       <ImageView fitHeight="324.0" fitWidth="551.0" layoutX="-147.0" layoutY="-83.0">
          <image>
@@ -23,7 +21,6 @@
             <Font size="26.0" />
          </font>
       </Label>
-      <Avatar layoutX="525.0" layoutY="35.0" />
       <TableView layoutX="60.0" layoutY="123.0" prefHeight="200.0" prefWidth="501.0">
          <columns>
             <TableColumn prefWidth="100.0" text="Nombre" />
@@ -33,6 +30,6 @@
             <TableColumn prefWidth="100.0" text="Me gusta" />
          </columns>
       </TableView>
-      <Button layoutX="422.0" layoutY="354.0" mnemonicParsing="false" text="Volver a la librería" />
+      <Button fx:id="VuelveLibreria" layoutX="422.0" layoutY="354.0" mnemonicParsing="false" onAction="#BackLib" text="Volver a la librería" />
    </children>
 </AnchorPane>

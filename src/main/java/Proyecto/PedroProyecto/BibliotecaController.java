@@ -25,6 +25,11 @@ public class BibliotecaController {
         App.setRoot("Login");
     }
     
+    @FXML
+    private void GoFav() throws IOException {
+        App.setRoot("Favoritas");
+    }
+    
     @FXML private Button anadeCancion;
     
     @FXML private TextField NombreCan;

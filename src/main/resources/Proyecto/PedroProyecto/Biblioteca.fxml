@@ -18,7 +18,7 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="449.0">
                <children>
                   <Button fx:id="bl" layoutX="183.0" layoutY="415.0" mnemonicParsing="false" onAction="#bl" text="Volver" />
-                  <Button layoutX="266.0" layoutY="415.0" mnemonicParsing="false" text="Mis canciones favoritas" />
+                  <Button fx:id="IrFav" layoutX="266.0" layoutY="415.0" mnemonicParsing="false" onAction="#GoFav" text="Mis canciones favoritas" />
                   <ImageView fitHeight="324.0" fitWidth="551.0" layoutX="-177.0" layoutY="-100.0">
                      <image>
                         <Image url="@../Imagenes/loguillo.png" />
