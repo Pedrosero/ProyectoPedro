@@ -20,11 +20,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class BibliotecaController {
 
+	/*
+	 * Cambia a la escena login al pulsar un botón
+	 */
     @FXML
     private void bl() throws IOException {
         App.setRoot("Login");
     }
     
+    /*
+	 * Cambia a la escena de canciones favoritas al pulsar un botón
+	 */
     @FXML
     private void GoFav() throws IOException {
         App.setRoot("Favoritas");

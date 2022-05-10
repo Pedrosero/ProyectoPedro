@@ -19,6 +19,10 @@ public class UsuarioDAO implements IDao<Usuario, Integer> {
 
 	}
 
+	/*
+	 * Metodo para insertar una canción en la bbdd
+	 * Se debe poner Nombre, genero, duracion, artista
+	 */
 	public boolean insert(Usuario us) {
 		miConexion = Connect.getConnect();
 		String sql = "INSERT INTO Usuario(Nombre, Contraseña, id_u) VALUES(?,?,?)";
@@ -61,6 +65,10 @@ public class UsuarioDAO implements IDao<Usuario, Integer> {
 		return null;
 	}
 
+	/*
+	 * Método para actualizar nuestro bbdd
+	 */
+	
 	public int update(Usuario us) {
 		miConexion = Connect.getConnect();
 		String sql = "UPDATE TABLE SET Nombre, Contraseña, id_u WHERE id_u=?";
@@ -74,7 +82,10 @@ public class UsuarioDAO implements IDao<Usuario, Integer> {
 		}
 		return 0;
 	}
-
+	
+	/*
+	 * Método para borrar elementos de nuestra bbdd
+	 */
 	public int delete(Usuario us) {
 		miConexion = Connect.getConnect();
 		String sql = "DELETE from usuario WHERE Nombre, Contraseña, id_u WHERE id_u=?";

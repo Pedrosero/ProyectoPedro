@@ -8,7 +8,9 @@ import javafx.scene.control.TextField;
 
 public class LoginController {
     
-	
+	/*
+	 * Cambia a la escena Nuevo usuario al pulsar un botón
+	 */
 	
 	@FXML
     void switchToNusuario() throws IOException {
@@ -16,6 +18,11 @@ public class LoginController {
     
     }
 	
+	/*
+	 * Agrego un usuario a mano para probar las vistas 
+	 * Al final se accede con los usuarios que estén registrados en 
+	 * la base de datos
+	 */
 	@FXML
 	private TextField NombreUsu;
 	
@@ -26,6 +33,9 @@ public class LoginController {
 	public void botonAcceso() throws IOException{
 		checkLogin();
 		}
+	/*
+	 * Verifica que los datos introducidos son esos
+	 */
 	 private void checkLogin() throws IOException {
 	        App a = new App();
 	        if(NombreUsu.getText().toString().equals("Admin") && ContraUsuario.getText().toString().equals("123")) {
